@@ -454,7 +454,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "I'm currently seeking new opportunities as a Software Developer. Feel free to reach out to discuss potential roles, projects, or just to connect!",
+    "I'm currently seeking new opportunities as a Software Developer. Feel free to reach out to discuss potential roles, projects, or just to connect! ",
   number: "+14385226060",
   email_address: "ksaleh10611@gmail.com"
 };
