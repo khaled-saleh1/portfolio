@@ -10,6 +10,5 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 Feel free to reach out if you'd like to collaborate or have any questions about my work.
 
-Email: ksaleh10611@gmail.com
-LinkedIn: [Khaled Saleh]([url](https://www.linkedin.com/in/khaled-saleh6/))
-GitHub: khaled-saleh1
+- Email: ksaleh10611@gmail.com
+- LinkedIn: [Khaled Saleh](https://www.linkedin.com/in/khaled-saleh6/)
