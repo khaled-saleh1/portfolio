@@ -6,7 +6,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 [![GitHub stars](https://img.shields.io/github/stars/saadpasta/developerFolio)](https://github.com/saadpasta/developerFolio/stargazers)
 
-##Contact
+## Contact
 
 Feel free to reach out if you'd like to collaborate or have any questions about my work.
 
