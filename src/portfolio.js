@@ -20,26 +20,22 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Khaled Saleh",
+  title: "Hi all, I'm Khaled",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Hi, I'm Khaled, a passionate new graduate and Software Developer 🚀 with experience as an intern building web applications and working with languages and technologies like C#, Java, React.js,Node,JS, TypeScript, and other cool libraries and frameworks."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "./assets/resume/1Khaled_Saleh_Resume2025.pdf", // Ensure the file is in the public/assets/resume/ folder
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/khaled-saleh1",
+  linkedin: "https://www.linkedin.com/in/khaled-saleh6/",
+  gmail: "ksaleh10611@gmail.com",
+
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +45,20 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle:
+    "PASSIONATE SOFTWARE DEVELOPER WITH A STRONG FOUNDATION IN FULL-STACK DEVELOPMENT",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop robust back-end services using technologies like C#, Java, .NET, and NestJS"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Design and maintain user-friendly front-end interfaces with React, Angular, HTML, and CSS"
+    ),
+    emoji(
+      "⚡ Enhance and modernize web applications, ensuring compatibility and improving performance"
+    ),
+    emoji(
+      "⚡ Integration of third-party services, including real-time APIs for enhanced functionality"
     )
   ],
 
@@ -73,24 +75,28 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "TypeScript",
+      fontAwesomeClassname: "fab fa-js" // No direct FontAwesome class for TS; using JS icon as a fallback
     },
     {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
     },
     {
+      skillName: "angular",
+      fontAwesomeClassname: "fab fa-angular"
+    },
+    {
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "NestJS",
+      fontAwesomeClassname: "fas fa-server" // NestJS doesn't have a direct icon, using server icon
     },
     {
       skillName: "npm",
@@ -101,8 +107,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-database" // MongoDB doesn't have a direct icon; using database icon
     },
     {
       skillName: "firebase",
@@ -113,8 +119,20 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "C#",
+      fontAwesomeClassname: "fas fa-code" // No direct FontAwesome class for C#; using generic code icon
+    },
+    {
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "MySQL",
+      fontAwesomeClassname: "fas fa-database" // No direct FontAwesome class for MySQL; using database icon
+    },
+    {
+      skillName: "C++",
+      fontAwesomeClassname: "fas fa-code" // No direct FontAwesome class for C++; using generic code icon
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,23 +144,15 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Concordia University",
+      logo: require("./assets/images/concordia-logo.png"),
+      subHeader: "Bachelor of Engineering in Software Engineering",
+      duration: "September 2021 - May 2025",
+      desc: "Achieved 1x Dean’s List for maintaining a high GPA and contributed to extracurricular activities.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "GPA: 3.6",
+        "Member of the Software Development Team in Concordia SAE Club (2023-2024)"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -150,7 +160,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -171,32 +181,105 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true, // Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Full Stack Developer Intern",
+      company: "CAE",
+      companylogo: require("./assets/images/cae2.jpg"),
+      date: "May 2024 – Present",
+      desc: "Worked on developing and modernizing full-stack applications with a focus on performance and accessibility.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Designed and implemented back-end logic and SQL database tables using C# .NET 4.0",
+        "Developed responsive front-end interfaces with HTML, CSS, and JavaScript",
+        "Conducted unit testing with xUnit, raising code coverage from 0% to 60-80%",
+        "Modernized over 40 web pages, ensuring compatibility with modern browsers"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "C# Software Developer Intern",
+      company: "Genetec",
+      companylogo: require("./assets/images/genetec.jpeg"),
+      date: "September 2023 – December 2023",
+      desc: "Maintained and enhanced C# desktop applications, ensuring system reliability and performance.",
+      descBullets: [
+        "Improved automated test pass rates from 95% to 100% by implementing unit tests with MSTest and SpecFlow",
+        "Diagnosed and resolved complex bugs using debugging tools",
+        "Enhanced system reliability and functionality with key optimizations"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Teaching Assistant",
+      company: "Concordia University",
+      companylogo: require("./assets/images/concordia-logo.png"),
+      date: "January 2024 – Present",
+      desc: "Supported students in mastering OOP and data structures through hands-on assistance and evaluations.",
+      descBullets: [
+        "Conducted one-on-one sessions for a class of 100 students",
+        "Collaborated with professors to evaluate assignments and exams"
+      ]
+    },
+    {
+      role: "Software Engineering Research Intern",
+      company: "Healthcare Systems Research & Analysis Inc.",
+      companylogo: require("./assets/images/healthcare_systems_r_a_logo.jpeg"),
+      date: "September 2022 – December 2022",
+      desc: "Focused on building machine learning models to enhance healthcare analysis and prediction systems.",
+      descBullets: [
+        "Built machine learning models to predict health parameters, improving accuracy by 15%",
+        "Reduced data processing time by 30% using optimized neural network designs",
+        "Specialized in Python-based models for health data prediction"
+      ]
+    }
+  ]
+};
+const portfolioProjects = {
+  display: true, // Set it to true to show portfolio projects Section
+  projectList: [
+    {
+      title: "Onyva: Outdoor Trip Planning Application (Capstone Project)",
+      description:
+        "A comprehensive outdoor trip planning application designed to streamline group collaboration, expense tracking, and itinerary management.",
+      videoUrl: null,
+      imageUrl: "assets/images/onyvapic.png",
+      githubLink: "https://github.com/nexus-capstone/Onyva",
+      websiteLink: "https://onyva.vercel.app/"
+    },
+    {
+      title: "Condofy: Condominium Management System",
+      description:
+        "A robust platform for managing condominium operations, including property profiles, reservations, and request handling.",
+      videoUrl: "https://www.youtube.com/embed/YPnIT_WDVWg",
+      imageUrl: null,
+      githubLink: "https://github.com/Condofy24/CondoManagement",
+      websiteLink: "https://condo-management-client.vercel.app/"
+    },
+    {
+      title: "Hand-Controlled Flight Simulator",
+      description:
+        "A flight simulator controlled through hand gestures, developed during the CAE-sponsored ConUHacks Hackathon.",
+      videoUrl: "https://www.youtube.com/embed/vDmcx5VmGMY",
+      imageUrl: null,
+      githubLink: "https://github.com/AbdallahSaid01/ConUHacks-2023",
+      websiteLink: null
+    },
+    {
+      title: "Spacecraft Shooting Game",
+      description:
+        "An immersive shooting game developed in C++ using the SFML library.",
+      videoUrl: "https://www.youtube.com/embed/HvIWgTVydIc",
+      imageUrl: null,
+      githubLink: "https://github.com/TarekElalfi/Shooting-Game",
+      websiteLink: null
+    },
+    {
+      title: "Jobify: Career Service Application",
+      description:
+        "A career service platform designed to help users manage their job applications effectively.",
+      videoUrl: "https://www.youtube.com/embed/lMcfmNYJRcQ",
+      imageUrl: null,
+      githubLink: "https://github.com/ramy-att/trivial-soen341project2023",
+      websiteLink: null
     }
   ]
 };
@@ -206,7 +289,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -239,7 +322,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -300,7 +383,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -324,7 +407,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +426,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +439,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -371,19 +454,19 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "I'm currently seeking new opportunities as a Software Developer. Feel free to reach out to discuss potential roles, projects, or just to connect!",
+  number: "+14385226060",
+  email_address: "ksaleh10611@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
@@ -403,5 +486,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
+  portfolioProjects
 };

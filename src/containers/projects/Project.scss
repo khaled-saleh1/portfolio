@@ -1,32 +1,44 @@
-.project-title {
-  font-size: 52px;
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 2rem;
+}
+
+.projects-heading {
+  font-size: 56px;
   font-weight: 400;
-  line-height: normal;
+  text-align: center;
 }
 
-.startup-project-text img {
-  max-width: 100%;
-  height: auto;
-}
-
-.repo-cards-div-main {
+.projects-cards-div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 1.5rem; /* Space between cards */
+
+  /* Adjust for medium screens */
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+
+  /* Adjust for small screens */
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+  }
 }
 
-/* Media Query */
+/* Media Queries for Heading Size */
 @media (max-width: 1380px) {
-  .project-title {
+  .projects-heading {
     font-size: 40px;
   }
 }
+
 @media (max-width: 768px) {
-  .project-title {
+  .projects-heading {
     font-size: 30px;
     text-align: center;
-  }
-  .repo-cards-div-main {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
